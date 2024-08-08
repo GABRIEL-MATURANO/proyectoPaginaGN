@@ -163,20 +163,48 @@ header div a img{
     margin-top: 20px;
 }
 
-/*estilos de las 3 imagenes*/
-.pics3{
-    display: grid; /*rows y columns, pueden ser en %, px, fr, etc*/
-    grid-template-columns: 1fr 1fr fr ; /* (repeat(3, 1fr))100px 100px 100px 3 filas */
-    grid-template-rows: repeat(3, 25%); /*con el 25 solo toma ese valor de la foto, no toma el 100% de la foto, lo que te da un 75, el resto es para acomodar el footer*/  /*100px 100px 100px 3 horizontal*/
-    align-content: center; /*se alinean en el eje vertical*/ /*el justify-content te lo alinea en el eje horizontal*/
-    row-gap: 10px; /*generar espacio entre las filas*/
+/*estilizamos con grid las imagenes, colocamos 3 columnas y definimos el espacio del contenedor (.grid)*/
+.grid{
+
+    margin-left: 50px;
+    margin-top: 30px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 25% 25% 25%;
+    align-items: center;
+    gap: 15px;
+    
 }
-.pics3{
+/*posicionamiento de las imagenes como una grilla de excel*/
+main .pic1, main .pic2, main .pic3, main .pic5,main .pic4{
+    grid-column: span 1;
+}
+/*TAMAÑO DE LAS IMAGENES */
+#img1, #img2, #img3, #img5{
     width: 100%;
     height: 100%;
-    object-fit: cover; /*NO ESTA EN LAS DIAPO, SIRVE PARA CONTROLOAR COMO SE AJUSTA NUESTRA IMG O VIDEO, DENTRO DE SU CONTENEDOR*/
- 
+    object-fit: cover;
 }
+
+#img4{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+/*bordes*/
+.pic1, .pic2, .pic3, .pic4, .pic5{
+    border-top: 1px solid #7C7C7C;
+    border-left: 1px solid #7C7C7C;
+    border-right: 1px solid #7C7C7C;
+    
+    border-radius: 10px;
+}
+
+
+
 
 
 /*video*/
