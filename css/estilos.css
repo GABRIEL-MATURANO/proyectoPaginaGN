@@ -1,0 +1,145 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*first mobile*/
+/*estilos header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #020202;
+    max-height: 5rem;
+}
+
+/*colocar el titulo al centro de la barra de navegacion y damos estilo*/
+.titulo1{
+    display: flex;
+    margin-left: -50px;
+    color: whitesmoke;
+    font-family: "roboto", sans-serif;
+}
+
+
+
+/*colocar el logo pegado a esquina superior izquierdo*/
+header div a img{
+    margin-left: -40%;
+}
+
+/*tamaño del logo, 5rem = 80px*/
+.logo{
+    max-width: 5rem;
+}
+
+
+/*posicionamiento del menu*/
+.nav-lista {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: end;
+    list-style-type: none;
+}
+
+/*.nav-lista{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}*/
+
+
+
+/*sacamos puntito y color de teto*/
+.nav-lista li a {
+    text-decoration: none;
+    color: #020202;
+    
+}
+
+/*.nav-lista li a{
+    text-decoration: none;
+    color: whitesmoke;
+}*/
+
+
+
+/*boton para abrir y cerrar menu*/
+.abrir-menu, .cerrar-menu{
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/*colores abrir y cerrar menu*/
+.abrir-menu{
+    color: whitesmoke;
+}
+
+.cerrar-menu{
+    color: #020202;
+}
+
+/*estilo menu*/
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: whitesmoke;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+}
+
+/*js*/
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*Foto Zapas*/
+.fotoZapa1{
+    width: 100%;
+    height: 60%;
+}
+
+/*texto encima de la foto*/
+.textoEncima{
+    background-image: url(../img/zapa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #F7F7F7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    padding: 40%;
+    height: 100%;
+    
+}
+
+/*video*/
+.video1{
+    
+    width:  100%;
+    height: 60%;
+}
+
+/*media de tablet*/
+@media screen and (min-width: 1024px) {
+
+}
